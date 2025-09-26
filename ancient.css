@@ -236,3 +236,64 @@ footer {
     padding-left: 0;
   }
 }
+@media (max-width: 1024px) {
+  .nav-grid {
+    gap: 1rem;
+  }
+
+  .nav-grid a {
+    font-size: 1rem;
+  }
+
+  .card, .content-box {
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Мобільні телефони (до 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  .nav-grid {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-grid a {
+    font-size: 0.9rem;
+  }
+
+  .card, .content-box {
+    flex-direction: column;
+    padding: 0.8rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-gif {
+    max-width: 60px;
+    margin-left: 0.5rem;
+  }
+}

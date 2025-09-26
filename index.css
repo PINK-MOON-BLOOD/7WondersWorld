@@ -164,3 +164,77 @@ footer {
     max-width: 100%;
   }
 }
+/* Планшети (до 1024px) */
+@media (max-width: 1024px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  .content-box {
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Планшети вертикально (до 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  main {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .content-box {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Смартфони (до 480px) */
+@media (max-width: 480px) {
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .content-box {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-gif {
+    max-width: 60px;
+    margin-left: 0.5rem;
+  }
+}

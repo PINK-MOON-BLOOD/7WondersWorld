@@ -203,12 +203,43 @@ footer {
   margin-left: 1rem;
   border-radius: 5px;
 }
+
+/* Планшети (до 1024px) */
+@media (max-width: 1024px) {
+  .nav-grid {
+    gap: 1rem;
+  }
+
+  .nav-grid a {
+    font-size: 1rem;
+  }
+
+  .card, .content-box {
+    padding: 1rem;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Смартфони та планшети вертикально (до 768px) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     text-align: center;
     gap: 0.5rem;
     padding: 1rem;
+  }
+
+  .nav-grid {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
   main, .card-grid {
@@ -229,7 +260,43 @@ footer {
     margin-top: 15px;
   }
 
-  header h1 {
-    padding-left: 0;
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Смартфони (до 480px) */
+@media (max-width: 480px) {
+  .nav-grid a {
+    font-size: 0.9rem;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .content-box {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-gif {
+    max-width: 60px;
+    margin-left: 0.5rem;
   }
 }
