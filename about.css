@@ -6,24 +6,12 @@
   --color-secondary: #2E5077;    /* глибокий синій */
   --color-highlight: #4CAF50;    /* смарагдовий зелений для hover */
   --color-overlay: rgba(0, 0, 0, 0.5);
+  --color-about-shadow: rgba(0, 0, 0, 0.2);
   --color-footer: #1A3C6D;
   --color-white: #FFFFFF;
-
-  /* Специфічні для елементів */
-  --color-header-bg: var(--color-primary);
-  --color-header-text: var(--color-white);
-  --color-link-hover: var(--color-highlight);
-
-  --color-about-bg: var(--color-white);
-  --color-about-text: var(--color-text);
-  --color-about-heading: var(--color-secondary);
-  --color-about-shadow: rgba(0, 0, 0, 0.2);
-
-  --color-footer-bg: var(--color-footer);
-  --color-footer-text: var(--color-white);
 }
 
-/* === Загальні стилі сторінки === */
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -34,13 +22,13 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-/* === Хедер === */
+
 header {
    display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-header-bg);
-  color: var(--color-header-text);
+  background: var(--color-primary);
+  color: var(--color-white);
   padding: 1rem 2rem;
 }
 
@@ -49,7 +37,7 @@ header {
   font-size: 2rem;
 } */
 
-/* === Навігація === */
+
 .nav-grid {
   list-style: none;
   display: flex;
@@ -62,7 +50,7 @@ header {
 .nav-grid a {
   font-size: larger;
   text-decoration: none;
-  color: var(--color-header-text);
+  color: var(--color-white);
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -75,12 +63,12 @@ header {
   color: var(--color-footer);
 }
 
-/* === Контент про автора === */
+
 .about {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background: var(--color-about-bg);
+  background: var(--color-white);
   border-radius: 12px;
   box-shadow: 0 4px 12px var(--color-about-shadow);
   text-align: center;
@@ -99,16 +87,16 @@ header .logo:hover {
 
 .about h2 {
   margin-top: 0;
-  color: var(--color-about-heading);
+  color: var(--color-secondary);
 }
 
 .about p {
   line-height: 1.6;
-  color: var(--color-about-text);
+  color: var(--color-text);
   margin-bottom: 15px;
 }
 
-/* Футер */
+
 footer {
   display: flex;
   justify-content: center;

@@ -1,15 +1,15 @@
 :root {
-  /* === Основні кольори === */
-  --color-bg: #F4E4BC;           /* пісочний/бежевий фон */
-  --color-text: #333333;         /* графітовий сірий */
-  --color-primary: #D4A017;      /* золотий акцент */
-  --color-secondary: #1A3C6D;    /* глибокий синій */
-  --color-highlight: #4CAF50;    /* смарагдовий зелений для hover */
+ 
+  --color-bg: #F4E4BC;          
+  --color-text: #333333;         
+  --color-primary: #D4A017;      
+  --color-secondary: #1A3C6D;    
+  --color-highlight: #4CAF50;    
   --color-overlay: rgba(0, 0, 0, 0.5);
   --color-footer: #1A3C6D;
   --color-white: #FFFFFF;
 
-  /* Специфічні для елементів */
+ 
   --color-header-bg: var(--color-primary);
   --color-header-text: var(--color-white);
   --color-link-hover: var(--color-highlight);
@@ -22,7 +22,6 @@
   --color-footer-text: var(--color-white);
 }
 
-/* === Загальні стилі === */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -33,12 +32,12 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-/* === Хедер === */
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-header-bg);
+  background: var(--color-primary);
   color: var(--color-header-text);
   padding: 1rem 2rem;
 }
@@ -82,7 +81,7 @@ header {
 .nav-grid li:nth-child(2) a {
   color: var(--color-footer);
 }
-/* === Контентні блоки === */
+
 .card-grid, main {
   display: flex;
   flex-direction: column;
@@ -176,7 +175,7 @@ header {
   background: var(--color-secondary);
 }
 
-/* Фони для контент-блоків */
+
 .bg-ancient {
   background-image: url("img/ancientCol.webp");
   background-size: cover;
@@ -206,7 +205,7 @@ footer {
    border-radius: 5px;
 }
 
-/* === Адаптивність === */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;

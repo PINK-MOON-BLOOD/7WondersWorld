@@ -12,7 +12,7 @@
   --color-white: #FFFFFF;       /* базовий білий для контрасту */
 }
 
-/* Загальні стилі */
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,6 @@ header {
   justify-content: space-between;
   align-items: center;
   background: var(--color-primary);
-  /* без градієнту */
   color: var(--color-white);
   padding: 1rem 2rem;
 }
@@ -71,7 +70,6 @@ nav a:hover {
    color: var(--color-footer);
 }
 
-/* Контент */
 main {
   display: flex;
   flex-direction: column;
@@ -122,7 +120,7 @@ main {
   background-repeat: no-repeat;
 }
 
-/* Кнопки */
+
 .btn {
   display: inline-block;
   background: var(--color-primary);
@@ -137,7 +135,7 @@ main {
   background: var( --color-secondary);
 }
 
-/* Футер */
+
 footer {
   display: flex;
   justify-content: center;
@@ -154,7 +152,7 @@ footer {
    border-radius: 5px;
 }
 
-/* Адаптив */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
