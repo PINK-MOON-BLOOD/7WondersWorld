@@ -112,3 +112,83 @@ footer {
   margin-left: 1rem;
    border-radius: 5px;
 }
+/* Планшети (до 1024px) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-grid {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .about {
+    margin: 30px 20px;
+    padding: 15px;
+  }
+
+  .about img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* Смартфони (до 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-grid {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav-grid a {
+    font-size: 1rem;
+  }
+
+  .about {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  .about img {
+    width: 140px;
+    height: 140px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-gif {
+    margin: 10px 0 0 0;
+  }
+}
+
+/* Дуже маленькі екрани (до 480px) */
+@media (max-width: 480px) {
+  .nav-grid a {
+    font-size: 0.9rem;
+  }
+
+  .about img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+}
