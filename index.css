@@ -1,0 +1,168 @@
+:root {
+  --color-bg: #F4E4BC;          /* пісочний/бежевий фон, нагадує стародавні руїни */
+  --color-text: #333333;        /* графітовий сірий для тексту, читабельний і сучасний */
+
+  --color-primary: #D4A017;     /* золотий акцент, символізує велич і розкіш */
+  --color-secondary: #2E5077;   /* глибокий синій, для другорядних елементів і таємничості */
+  
+  --color-highlight: #4CAF50;   /* смарагдовий зелений для hover-ефектів, асоціюється з природою */
+  
+  --color-overlay: rgba(0, 0, 0, 0.5); /* напівпрозорий оверлей для затемнення */
+  --color-footer: #1A3C6D;      /* темно-синій для футера, підкреслює велич */
+  --color-white: #FFFFFF;       /* базовий білий для контрасту */
+}
+
+/* Загальні стилі */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-primary);
+  /* без градієнту */
+  color: var(--color-white);
+  padding: 1rem 2rem;
+}
+
+header .logo:hover {
+  transform: scale(1.2);
+  transition: 0.25s ease-in-out;
+}
+
+/* header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  padding-left: 200px;
+} */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-size: larger;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-grid li:first-child a {
+  color: var(--color-footer);
+}
+nav a:hover {
+  color: var(--color-footer);
+  transition: 0.4s ease-in-out;
+}
+.nav-grid a.active {
+   color: var(--color-footer);
+}
+
+/* Контент */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.content-box {
+  position: relative;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: var(--color-white);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay);
+  z-index: 0;
+}
+
+.content-box * {
+  position: relative;
+  z-index: 1;
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.bg-ancient {
+  background-size: 1100px 485px;
+  background-image: url("img/ancientCol.webp");
+  background-repeat: no-repeat;
+}
+
+.bg-new {
+  background-image: url("img/moderCol.webp");
+  background-repeat: no-repeat;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var( --color-secondary);
+}
+
+/* Футер */
+footer {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  background: var(--color-footer);
+  color: var(--color-white);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.footer-gif {
+  width: 90px;
+  height: auto;
+  margin-left: 1rem;
+   border-radius: 5px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  main {
+    max-width: 100%;
+  }
+}
