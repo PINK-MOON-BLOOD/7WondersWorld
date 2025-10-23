@@ -1,14 +1,16 @@
 /* === Загальні кольори === */
 :root {
-  --color-bg: #F4E4BC;           /* пісочний/бежевий фон */
-  --color-text: #333333;         /* графітовий сірий */
-  --color-primary: #D4A017;      /* золотий акцент */
-  --color-secondary: #2E5077;    /* глибокий синій */
-  --color-highlight: #4CAF50;    /* смарагдовий зелений для hover */
+  --color-bg: #F4E4BC;
+  --color-primary: #D4A017;     
+  --color-secondary: #2E5077;          
+  --color-text: #333333;        
+  --color-white: #FFFFFF; 
   --color-overlay: rgba(0, 0, 0, 0.5);
-  --color-about-shadow: rgba(0, 0, 0, 0.2);
-  --color-footer: #1A3C6D;
-  --color-white: #FFFFFF;
+  /* --color-highlight: #4CAF50;    */
+
+  /* --color-about-shadow: rgba(0, 0, 0, 0.2); */
+  /* --color-footer: #1A3C6D; */
+
 }
 
 
@@ -60,7 +62,7 @@ header {
   transition: 0.4s ease-in-out;
 }
 .nav-grid li:last-child a {
-  color: var(--color-footer);
+  color: var(--color-secondary);
 }
 
 
@@ -70,7 +72,7 @@ header {
   padding: 20px;
   background: var(--color-white);
   border-radius: 12px;
-  box-shadow: 0 4px 12px var(--color-about-shadow);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 header .logo:hover {
@@ -101,7 +103,7 @@ footer {
   display: flex;
   justify-content: center;
   /* text-align: center; */
-  background: var(--color-footer);
+  background: var(--color-secondary);
   color: var(--color-white);
   padding: 1rem;
   margin-top: 2rem;

@@ -1,17 +1,16 @@
 :root {
 
-  --color-bg: #F4E4BC;           
-  --color-text: #333333;        
+  --color-bg: #F4E4BC;     
   --color-primary: #D4A017;      
-  --color-secondary: #1A3C6D;   
-  --color-highlight: #4CAF50;    
+  --color-secondary: #1A3C6D;        
+  --color-text: #333333;        
   --color-overlay: rgba(0, 0, 0, 0.5);
-  --color-footer: #1A3C6D;
   --color-white: #FFFFFF;
-
-
-  --color-header-bg: var(--color-primary);
-  --color-header-text: var(--color-white);
+  
+ /* --color-footer: #1A3C6D; */
+    /* --color-highlight: #4CAF50;     */
+  /* --color-header-bg: var(--color-primary);
+  --color-header-text: var();
   --color-link-hover: var(--color-highlight);
 
   --color-card-bg: var(--color-secondary);
@@ -19,7 +18,7 @@
   --color-card-title: var(--color-white);
 
   --color-footer-bg: var(--color-footer);
-  --color-footer-text: var(--color-white);
+  --color-footer-text: var(--color-white); */
 }
 
 
@@ -38,8 +37,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-header-bg);
-  color: var(--color-header-text);
+  background: var(--color-primary);
+  color: var(--color-white);
   padding: 1rem 2rem;
 }
 header .logo:hover {
@@ -68,7 +67,7 @@ header .logo:hover {
 
 .nav-grid a {
   font-size: larger;
-  color: var(--color-header-text);
+  color: var(--color-white);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -79,7 +78,7 @@ header .logo:hover {
    transition: 0.4s ease-in-out;
 }
 .nav-grid li:nth-child(3) a {
-  color: var(--color-footer);
+  color: var(--color-secondary);
 }
 
 .card-grid, main {
@@ -98,8 +97,8 @@ header .logo:hover {
   justify-content: space-between;
   border-radius: 12px;
   padding: 1.5rem;
-  background: var(--color-card-bg);
-  box-shadow: 0 4px 8px var(--color-card-shadow);
+  background: var(--color-secondary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -139,12 +138,12 @@ header .logo:hover {
 .card h2 {
   margin-top: 0;
   font-size: 1.5rem;
-  color: var(--color-card-title);
+  color: var(--color-white);
 }
 .card p {
   /* margin-top: 0;
   font-size: 1.5rem; */
-  color: var(--color-card-title);
+  color: var(--color-white);
 }
 .image {
   flex: 1;
@@ -192,7 +191,7 @@ header .logo:hover {
 footer {
   display: flex;
   justify-content: center;
-  background: var(--color-footer);
+  background: var(--color-secondary);
   color: var(--color-white);
   padding: 1rem;
   margin-top: 2rem;

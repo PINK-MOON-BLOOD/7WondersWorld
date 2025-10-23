@@ -1,14 +1,9 @@
 :root {
   --color-bg: #F4E4BC;          /* пісочний/бежевий фон, нагадує стародавні руїни */
-  --color-text: #333333;        /* графітовий сірий для тексту, читабельний і сучасний */
-
   --color-primary: #D4A017;     /* золотий акцент, символізує велич і розкіш */
   --color-secondary: #2E5077;   /* глибокий синій, для другорядних елементів і таємничості */
-  
-  --color-highlight: #4CAF50;   /* смарагдовий зелений для hover-ефектів, асоціюється з природою */
-  
+  --color-text: #333333;        /* графітовий сірий для тексту, читабельний і сучасний */
   --color-overlay: rgba(0, 0, 0, 0.5); /* напівпрозорий оверлей для затемнення */
-  --color-footer: #1A3C6D;      /* темно-синій для футера, підкреслює велич */
   --color-white: #FFFFFF;       /* базовий білий для контрасту */
 }
 
@@ -60,14 +55,14 @@ nav a {
   transition: color 0.3s;
 }
 .nav-grid li:first-child a {
-  color: var(--color-footer);
+  color: var(--color-secondary);
 }
 nav a:hover {
-  color: var(--color-footer);
+  color: var(--color-secondary);
   transition: 0.4s ease-in-out;
 }
 .nav-grid a.active {
-   color: var(--color-footer);
+   color: var(--color-secondary);
 }
 
 main {
@@ -140,7 +135,7 @@ footer {
   display: flex;
   justify-content: center;
   /* text-align: center; */
-  background: var(--color-footer);
+  background: var(--color-secondary);
   color: var(--color-white);
   padding: 1rem;
   margin-top: 2rem;
