@@ -1,10 +1,10 @@
 :root {
-  --color-bg: #F4E4BC;          /* пісочний/бежевий фон, нагадує стародавні руїни */
-  --color-primary: #D4A017;     /* золотий акцент, символізує велич і розкіш */
-  --color-secondary: #2E5077;   /* глибокий синій, для другорядних елементів і таємничості */
-  --color-text: #333333;        /* графітовий сірий для тексту, читабельний і сучасний */
-  --color-overlay: rgba(0, 0, 0, 0.5); /* напівпрозорий оверлей для затемнення */
-  --color-white: #FFFFFF;       /* базовий білий для контрасту */
+  --color-bg: #F5E5BC;         
+  --color-primary: #D4A017;     
+  --color-secondary: #1A306E;   
+  --color-text: #333333;   
+  --color-overlay: rgba(0, 0, 0, 0.5); 
+  --color-white: #FFFFFF;  
 }
 
 
@@ -106,12 +106,12 @@ main {
 
 .bg-ancient {
   background-size: 1100px 485px;
-  background-image: url("img/ancientCol.webp");
+  background-image: url("newImg/Стародавній_колаж.webp");
   background-repeat: no-repeat;
 }
 
 .bg-new {
-  background-image: url("img/moderCol.webp");
+  background-image: url("newImg/РисКолаж7новий.webp");
   background-repeat: no-repeat;
 }
 
@@ -158,6 +158,7 @@ footer {
   main {
     max-width: 100%;
   }
+
 }
 /* Планшети (до 1024px) */
 @media (max-width: 1024px) {
@@ -203,7 +204,7 @@ footer {
   }
 
   .btn {
-    width: 100%;
+    /* width: 40%; */
     text-align: center;
   }
 }

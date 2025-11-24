@@ -1,8 +1,8 @@
 :root {
 
-  --color-bg: #F4E4BC;     
-  --color-primary: #D4A017;      
-  --color-secondary: #1A3C6D;        
+  --color-bg: #F5E5BC;          
+  --color-primary: #D4A017;     
+  --color-secondary: #1A306E;       
   --color-text: #333333;        
   --color-overlay: rgba(0, 0, 0, 0.5);
   --color-white: #FFFFFF;
@@ -253,14 +253,19 @@ footer {
   .card-content {
     flex-direction: column;
   }
-
+  .image  {
+ 
+    text-align: center;
+  }
   .image img {
-    max-width: 100%;
+    width: 80%;
+    height: 80%;
+    /* max-width: 100%; */
     margin-top: 15px;
   }
 
   .btn {
-    width: 100%;
+    width: 20%;
     text-align: center;
   }
 
@@ -290,6 +295,7 @@ footer {
   }
 
   .btn {
+    width: 20%;
     padding: 0.5rem;
     font-size: 0.85rem;
   }
@@ -299,3 +305,4 @@ footer {
     margin-left: 0.5rem;
   }
 }
+

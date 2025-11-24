@@ -1,8 +1,8 @@
 :root {
  
-  --color-bg: #F4E4BC;   
+  --color-bg: #F5E5BC;   
   --color-primary: #D4A017;      
-  --color-secondary: #1A3C6D;         
+  --color-secondary: #1A306E;         
   --color-text: #333333;         
   --color-overlay: rgba(0, 0, 0, 0.5);
   --color-white: #FFFFFF;
@@ -226,11 +226,16 @@ footer {
     flex-direction: column;
   }
 
+ .image  {
+ 
+    text-align: center;
+  }
   .image img {
-    max-width: 100%;
+    width: 80%;
+    height: 80%;
+    /* max-width: 100%; */
     margin-top: 15px;
   }
-
   header h1 {
     padding-left: 0;
   }
