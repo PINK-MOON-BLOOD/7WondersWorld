@@ -6,7 +6,6 @@
   --color-text: #333333;        
   --color-white: #FFFFFF; 
   --color-overlay: rgba(0, 0, 0, 0.5);
-
 }
 
 
@@ -29,12 +28,6 @@ header {
   color: var(--color-white);
   padding: 1rem 2rem;
 }
-
-/* header h1 {
-  margin: 0;
-  font-size: 2rem;
-} */
-
 
 .nav-grid {
   list-style: none;
@@ -99,7 +92,6 @@ header .logo:hover {
 footer {
   display: flex;
   justify-content: center;
-  /* text-align: center; */
   background: var(--color-secondary);
   color: var(--color-white);
   padding: 1rem;

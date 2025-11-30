@@ -1,24 +1,10 @@
 :root {
-
   --color-bg: #F5E5BC;          
   --color-primary: #D4A017;     
   --color-secondary: #1A306E;       
   --color-text: #333333;        
   --color-overlay: rgba(0, 0, 0, 0.5);
   --color-white: #FFFFFF;
-  
- /* --color-footer: #1A3C6D; */
-    /* --color-highlight: #4CAF50;     */
-  /* --color-header-bg: var(--color-primary);
-  --color-header-text: var();
-  --color-link-hover: var(--color-highlight);
-
-  --color-card-bg: var(--color-secondary);
-  --color-card-shadow: rgba(0, 0, 0, 0.2);
-  --color-card-title: var(--color-white);
-
-  --color-footer-bg: var(--color-footer);
-  --color-footer-text: var(--color-white); */
 }
 
 
@@ -45,17 +31,6 @@ header .logo:hover {
   transform: scale(1.2);
   transition: 0.25s ease-in-out;
 }
-/* header .logo {
-  font-size: 2rem;
-  font-weight: bold;
-} */
-
-/* header h1 {
-  margin: 0;
-  flex: 1;
-  text-align: center;
-  padding-left: 200px;
-} */
 
 .nav-grid {
   list-style: none;
@@ -141,8 +116,6 @@ header .logo:hover {
   color: var(--color-white);
 }
 .card p {
-  /* margin-top: 0;
-  font-size: 1.5rem; */
   color: var(--color-white);
 }
 .image {

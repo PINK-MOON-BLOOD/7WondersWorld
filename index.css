@@ -32,12 +32,6 @@ header .logo:hover {
   transition: 0.25s ease-in-out;
 }
 
-/* header h1 {
-  margin: 0;
-  flex: 1;
-  text-align: center;
-  padding-left: 200px;
-} */
 
 nav ul {
   list-style: none;
@@ -134,7 +128,6 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  /* text-align: center; */
   background: var(--color-secondary);
   color: var(--color-white);
   padding: 1rem;
